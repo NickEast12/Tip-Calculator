@@ -4,6 +4,114 @@
 	box-sizing: border-box;
 	font-family: IBM Plex Sans
 }
+a,
+a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+@media only screen and (min-width: 310px) {
+body {
+	background: rgba(1 100 200);
+}
+#wrapper {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	margin-top: 2em;
+	border-radius: 20px;
+	background: white;
+	color: rgba(1 100 200);
+}
+form {
+	display: grid; 
+	grid-template-columns: 1fr 1fr; 
+	width: 90%;
+	margin: auto;
+	 
+}
+/* The main styles */
+#title {
+	font-size: 4em;
+}
+p {
+	font-size: 1.3em;
+		margin: 1em 0;
+	font-weight: 700;
+
+}
+#bill, #tip, #people, #submit {
+	font-size: 1.3em;
+	margin: 1em 0;
+	border: rgba(1 100 200) solid 1px; 
+	border-radius: 5px;
+	padding-left: 5px;
+}
+#submit {
+	width: 200%;
+	color: rgba(1 100 200);
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	transition-property: color border;
+	transition-duration: .5s;
+	transition-timing-function: ease-in-out;
+	cursor: pointer;
+}
+#submit:hover {
+	background: rgba(1 100 200);
+	color: white;
+}
+/* The pop up modal box */ 
+#answers {
+	border: rgba(1 100 200) solid 10px;
+	background: white;
+	position: fixed;
+	top: 20px;
+	left: 5em;
+	width: 80%;
+	border-radius: 20px;
+	display: none;
+	
+}
+#answers h3 {
+	font-size: 2em;
+	text-align: center;
+	margin: 1em;
+	font-weight: 200;
+}
+#cross {
+	font-size: 40px;
+	float: right;
+	margin-top: -9.5em;
+	margin-right: 1em;
+	cursor: pointer;
+}
+span:hover,
+span:focus {
+    color: rgba(1 100 200);
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Git hub Link Styles */
+.link {
+	width: 45%;
+	margin: auto;
+	text-align: center;
+	margin-top: 3em;
+}
+.link h4 {
+	font-size: 2em;
+	font-weight: 200;
+	color: white;
+}
+.link i {
+	font-size: 60px;
+	margin-top: .5em;
+	color: white;
+}
+	
+}
+@media only screen and (min-width:800px) {
 body {
 	background: rgba(1 100 200);
 }
@@ -23,6 +131,7 @@ form {
 	margin: auto;
 	 
 }
+/* The main styles */
 #title {
 	font-size: 4em;
 }
@@ -54,7 +163,7 @@ p {
 	background: rgba(1 100 200);
 	color: white;
 }
-
+/* The pop up modal box */ 
 #answers {
 	border-left: rgba(1 100 200) solid 10px;
 	border-right: rgba(1 100 200) solid 10px;
@@ -80,10 +189,27 @@ p {
 	margin-right: 1em;
 	cursor: pointer;
 }
-
 span:hover,
 span:focus {
     color: rgba(1 100 200);
     text-decoration: none;
     cursor: pointer;
+}
+/* Git hub Link Styles */
+.link {
+	width: 45%;
+	margin: auto;
+	text-align: center;
+	margin-top: 3em;
+}
+.link h4 {
+	font-size: 2em;
+	font-weight: 200;
+	color: white;
+}
+.link i {
+	font-size: 60px;
+	margin-top: .5em;
+	color: white;
+}
 }

@@ -8,18 +8,17 @@
 	</head>
 	<body>
 		<div id="wrapper">
-			<h1 id="title">Tip Calculator</h1>
+			<h1 id="title"><a href="https://nickeast12.github.io/">Tip Calculator</a></h1>
 			<h2>Need to split a bill after a meal?</h2>
 			<h3>Then look no further than the all in one bill/tip calculator</h3>
 			<form>
-				<p>Your Bill Total:</p>
+				<p id="yourBill">Your Bill Total:</p>
 				<input type="text" id="bill" placeholder="How much was your bill ">
-				<p>Tip  %</p>
+				<p id="theTip">Tip  %</p>
 				<input type="text" placeholder="%" id="tip">
-				<p>Number of people</p>
+				<p id="peopleNo">Number of people</p>
 				<input type="text" id="people">
 				<button type="button" name="data"  id="submit" onclick=" return myFunction()">Calculate</button>
-
 			</form>
 		</div>
 		<div id="answers">
